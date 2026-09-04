@@ -74,9 +74,9 @@ export default function LoginPage({ onLogin }: LoginPageProps) {
             我们来做什么？
           </span>
           <h1 className="mt-[6px] text-center text-[54px] font-semibold leading-[80px] tracking-[1.08px] text-[#18181a]">
-            StaffDeck
+            TeamerHub
             <br />
-            数字员工运营平台
+            数字员工与团队协同中枢
           </h1>
 
           {!showForm ? (
@@ -169,7 +169,7 @@ export default function LoginPage({ onLogin }: LoginPageProps) {
         <div className="mt-[32px] flex w-full justify-center">
           <img
             src={loginPreview}
-            alt="StaffDeck 产品预览"
+            alt="TeamerHub 产品预览"
             className="h-auto w-full max-w-[1200px] select-none object-contain"
             draggable={false}
           />

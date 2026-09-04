@@ -50,18 +50,31 @@
 
   <!-- ==================== HEADER BAR ==================== -->
   <g transform="translate(60, 40)">
-    <!-- Brand Icon -->
-    <rect x="0" y="2" width="36" height="36" rx="10" fill="url(#primaryGrad)"/>
-    <path d="M12 20 L16 24 L24 16" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Brand Icon (Team Hub) -->
+    <rect x="0" y="2" width="38" height="38" rx="10" fill="url(#primaryGrad)"/>
+    <!-- Team Member 1 (Center Top Leader) -->
+    <circle cx="19" cy="13" r="3.2" fill="#FFFFFF"/>
+    <path d="M13.5 21 C13.5 18 16 17.5 19 17.5 C22 17.5 24.5 18 24.5 21" fill="none" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round"/>
+    <!-- Team Member 2 (Left) -->
+    <circle cx="9.5" cy="20" r="2.4" fill="#FFFFFF" opacity="0.9"/>
+    <path d="M5.5 26.5 C5.5 24.2 7.5 23.8 9.5 23.8 C11.5 23.8 13.5 24.2 13.5 26.5" fill="none" stroke="#FFFFFF" stroke-width="1.4" stroke-linecap="round" opacity="0.9"/>
+    <!-- Team Member 3 (Right) -->
+    <circle cx="28.5" cy="20" r="2.4" fill="#FFFFFF" opacity="0.9"/>
+    <path d="M24.5 26.5 C24.5 24.2 26.5 23.8 28.5 23.8 C30.5 23.8 32.5 24.2 32.5 26.5" fill="none" stroke="#FFFFFF" stroke-width="1.4" stroke-linecap="round" opacity="0.9"/>
+    <!-- Team Interconnection Hub Link -->
+    <path d="M10 24 L19 20 L28 24" fill="none" stroke="#93C5FD" stroke-width="1.2" stroke-dasharray="2,2"/>
     
-    <text x="48" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="20" font-weight="700" fill="#0F172A">
-      企业级数字员工核心体系架构示意图
+    <text x="50" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="20" font-weight="700" fill="#0F172A">
+      TeamerHub · 企业级数字员工与智能团队协同体系架构示意图
     </text>
-    <text x="48" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12" fill="#64748B">
-      HCH Staff Hub · 确定性状态机流程 × 物理沙箱执行 × 人机协同治理的下一代智能劳动力模型
+    <text x="50" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12" fill="#64748B">
+      TeamerHub · 确定性状态机流程 × 物理沙箱执行 × 多Agent团队协同的下一代智能劳动力中枢
     </text>
 
     <!-- Badges on the right -->
+    <rect x="850" y="8" width="80" height="24" rx="12" fill="#F0FDF4"/>
+    <text x="890" y="24" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#16A34A">多Agent协同</text>
+
     <rect x="940" y="8" width="80" height="24" rx="12" fill="#EFF6FF"/>
     <text x="980" y="24" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#2563EB">高确定性</text>
 
@@ -153,14 +166,19 @@
     <path d="M 0 20 Q 0 0 20 0 L 570 0 Q 590 0 590 20 L 590 64 L 0 64 Z" fill="#F8FAFC"/>
     <line x1="0" y1="64" x2="590" y2="64" stroke="#E2E8F0" stroke-width="1"/>
 
-    <!-- Avatar & Role -->
-    <rect x="20" y="14" width="36" height="36" rx="10" fill="url(#primaryGrad)"/>
-    <text x="38" y="38" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#FFFFFF">🧑‍💼</text>
-    <text x="68" y="30" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif" font-size="15" font-weight="700" fill="#0F172A">
-      数字员工本体模型 (AI Digital Employee Core)
+    <!-- Avatar & Role (Team Employee) -->
+    <rect x="20" y="14" width="38" height="38" rx="10" fill="url(#primaryGrad)"/>
+    <circle cx="34" cy="27" r="4.5" fill="#FFFFFF"/>
+    <path d="M25 40 C25 34.5 29 33.5 34 33.5 C39 33.5 43 34.5 43 40" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+    <!-- Team Badge in corner of avatar -->
+    <circle cx="46" cy="22" r="4" fill="#10B981"/>
+    <path d="M44 22 L45.5 23.5 L48 20.5" fill="none" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round"/>
+    
+    <text x="70" y="30" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif" font-size="15" font-weight="700" fill="#0F172A">
+      数字员工本体与团队协同中枢 (Digital Employee Core &amp; Team Hub)
     </text>
-    <text x="68" y="48" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif" font-size="11" fill="#64748B">
-      工号: SD-8092 · 岗位画像: 合规初审/核算专员 · 权限: 租户隔离RBAC · 执行基座: Harness v2
+    <text x="70" y="48" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif" font-size="11" fill="#64748B">
+      工号: TH-8092 · 岗位画像: 业财与合规调度专员 · 协同拓扑: TeamerHub Mesh · 执行基座: Harness v2
     </text>
 
     <!-- Sub-Section 1: 认知与规划大脑 (Cognitive Brain) -->
@@ -356,9 +374,14 @@
     <!-- Left Block: Multi-Agent Team Collaboration -->
     <g transform="translate(20, 16)">
       <rect width="28" height="28" rx="8" fill="#E0F2FE"/>
-      <circle cx="14" cy="14" r="5" fill="#0284C7"/>
+      <!-- Team Vector Icon -->
+      <circle cx="14" cy="9.5" r="2.2" fill="#0284C7"/>
+      <path d="M10.5 15.5 C10.5 13.5 12 13 14 13 C16 13 17.5 13.5 17.5 15.5" fill="none" stroke="#0284C7" stroke-width="1.2"/>
+      <circle cx="8" cy="15" r="1.8" fill="#0284C7" opacity="0.8"/>
+      <circle cx="20" cy="15" r="1.8" fill="#0284C7" opacity="0.8"/>
+      <path d="M8 18 L14 15 L20 18" fill="none" stroke="#38BDF8" stroke-width="1" stroke-dasharray="1.5,1.5"/>
       <text x="36" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif" font-size="13" font-weight="700" fill="#0F172A">
-        多 Agent 团队协同机制 (Team Synergy)
+        TeamerHub 多 Agent 团队协同机制 (Multi-Agent Team Synergy)
       </text>
       <text x="36" y="34" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10" fill="#64748B">
         Team Leader 拆解 · 3 轮血条竞标制 · 共享黑板活文档

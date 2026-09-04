@@ -2,7 +2,7 @@ const now = new Date().toISOString();
 
 const mockData = {
   tenantId: 'tenant_demo',
-  
+
   // Current user & accounts
   currentUser: {
     id: 'user_admin',
@@ -605,3 +605,4 @@ const mockData = {
 };
 
 module.exports = { mockData };
+

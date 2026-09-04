@@ -18,3 +18,4 @@ server.listen(PORT, HOST, () => {
   console.log(`👉 All /api/* endpoints are ready for frontend-service`);
   console.log(`======================================================\n`);
 });
+

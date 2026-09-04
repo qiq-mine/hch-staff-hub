@@ -100,7 +100,7 @@ async function handleMockRequest(req, res) {
         {
           id: 'cred_user_1',
           name: '默认开发测试密钥',
-          masked_key: 'sd_live_99f2*****************7a1c',
+          masked_key: 'th_live_99f2*****************7a1c',
           created_at: new Date(Date.now() - 86400000).toISOString(),
           last_used_at: new Date().toISOString(),
         },
@@ -110,8 +110,8 @@ async function handleMockRequest(req, res) {
       return sendJson(res, 200, {
         id: `cred_user_${Date.now()}`,
         name: body.name || '新建 API 密钥',
-        raw_key: `sd_live_${Math.random().toString(36).slice(2)}${Date.now()}`,
-        masked_key: 'sd_live_new*****************key',
+        raw_key: `th_live_${Math.random().toString(36).slice(2)}${Date.now()}`,
+        masked_key: 'th_live_new*****************key',
         created_at: new Date().toISOString(),
       });
     }
@@ -210,7 +210,7 @@ async function handleMockRequest(req, res) {
         harness_max_actions: 32,
         metadata: {
           avatar: 'staffdeck-avatar-default-Cg_vAcCz.png',
-          staff_no: `SD-${Math.floor(1000 + Math.random() * 9000)}`,
+          staff_no: `TH-${Math.floor(1000 + Math.random() * 9000)}`,
           role_title: body.name || '业务助理',
           department: '运营部',
           published_to_gallery: false,
@@ -248,15 +248,15 @@ async function handleMockRequest(req, res) {
   if (pathname.includes('/api-credentials')) {
     if (method === 'GET') {
       return sendJson(res, 200, [
-        { id: 'cred_agent_1', name: '系统运行运行时密钥', masked_key: 'sd_live_8830*****************12ef', created_at: new Date().toISOString() },
+        { id: 'cred_agent_1', name: '系统运行运行时密钥', masked_key: 'th_live_8830*****************12ef', created_at: new Date().toISOString() },
       ]);
     }
     if (method === 'POST') {
       return sendJson(res, 200, {
         id: `cred_${Date.now()}`,
         name: body.name || '新建员工密钥',
-        raw_key: `sd_live_agent_${Math.random().toString(36).slice(2)}`,
-        masked_key: 'sd_live_ag*****************key',
+        raw_key: `th_live_agent_${Math.random().toString(36).slice(2)}`,
+        masked_key: 'th_live_ag*****************key',
         created_at: new Date().toISOString(),
       });
     }
