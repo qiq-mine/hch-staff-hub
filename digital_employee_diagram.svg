@@ -1,0 +1,419 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 820" width="100%" height="100%">
+  <defs>
+    <!-- Modern Color Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#EDF2F7"/>
+    </linearGradient>
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#3B82F6"/>
+    </linearGradient>
+    <linearGradient id="brainGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7C3AED"/>
+      <stop offset="100%" stop-color="#6366F1"/>
+    </linearGradient>
+    <linearGradient id="sopGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#10B981"/>
+    </linearGradient>
+    <linearGradient id="toolGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D97706"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+    <linearGradient id="teamGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284C7"/>
+      <stop offset="100%" stop-color="#0EA5E9"/>
+    </linearGradient>
+    <linearGradient id="hitlGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#DC2626"/>
+      <stop offset="100%" stop-color="#EF4444"/>
+    </linearGradient>
+
+    <!-- Soft Drop Shadows -->
+    <filter id="cardShadow" x="-6%" y="-4%" width="112%" height="110%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#0F172A" flood-opacity="0.06"/>
+    </filter>
+    <filter id="glowShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#2563EB" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- Background with delicate grid pattern -->
+  <rect width="1280" height="820" fill="url(#bgGrad)"/>
+  <g opacity="0.4">
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#E2E8F0" stroke-width="1"/>
+    </pattern>
+    <rect width="1280" height="820" fill="url(#grid)"/>
+  </g>
+
+  <!-- ==================== HEADER BAR ==================== -->
+  <g transform="translate(60, 40)">
+    <!-- Brand Icon -->
+    <rect x="0" y="2" width="36" height="36" rx="10" fill="url(#primaryGrad)"/>
+    <path d="M12 20 L16 24 L24 16" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <text x="48" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="20" font-weight="700" fill="#0F172A">
+      企业级数字员工核心体系架构示意图
+    </text>
+    <text x="48" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12" fill="#64748B">
+      HCH Staff Hub · 确定性状态机流程 × 物理沙箱执行 × 人机协同治理的下一代智能劳动力模型
+    </text>
+
+    <!-- Badges on the right -->
+    <rect x="940" y="8" width="80" height="24" rx="12" fill="#EFF6FF"/>
+    <text x="980" y="24" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#2563EB">高确定性</text>
+
+    <rect x="1028" y="8" width="90" height="24" rx="12" fill="#ECFDF5"/>
+    <text x="1073" y="24" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#059669">沙箱安全隔离</text>
+
+    <rect x="1126" y="8" width="80" height="24" rx="12" fill="#FEF3C7"/>
+    <text x="1166" y="24" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#D97706">HITL 兜底</text>
+  </g>
+
+  <!-- ==================== LEFT PANEL: 渠道交互网关 ==================== -->
+  <g transform="translate(60, 105)" filter="url(#cardShadow)">
+    <rect width="240" height="520" rx="18" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.2"/>
+    
+    <!-- Title -->
+    <rect x="18" y="18" width="32" height="32" rx="8" fill="#EFF6FF"/>
+    <circle cx="34" cy="34" r="6" fill="#2563EB"/>
+    <text x="58" y="33" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif" font-size="14" font-weight="700" fill="#1E293B">全渠道接入与网关</text>
+    <text x="58" y="47" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif" font-size="11" fill="#64748B">Omni-channel Inbound</text>
+    <line x1="18" y1="62" x2="222" y2="62" stroke="#F1F5F9" stroke-width="1"/>
+
+    <!-- Channels List -->
+    <g transform="translate(18, 75)">
+      <!-- Feishu -->
+      <rect width="204" height="42" rx="10" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+      <rect x="10" y="11" width="20" height="20" rx="5" fill="#00D6B9"/>
+      <text x="38" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#1E293B">飞书 / Lark</text>
+      <text x="194" y="26" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10" fill="#64748B">WS长连</text>
+
+      <!-- WeCom -->
+      <rect y="50" width="204" height="42" rx="10" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+      <rect x="10" y="61" width="20" height="20" rx="5" fill="#2BA245"/>
+      <text x="38" y="76" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#1E293B">企业微信 / WeCom</text>
+      <text x="194" y="76" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10" fill="#64748B">机器人</text>
+
+      <!-- WeChat iLink -->
+      <rect y="100" width="204" height="42" rx="10" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+      <rect x="10" y="111" width="20" height="20" rx="5" fill="#07C160"/>
+      <text x="38" y="126" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#1E293B">微信 / 微信客服</text>
+      <text x="194" y="126" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10" fill="#64748B">iLink协议</text>
+
+      <!-- DingTalk -->
+      <rect y="150" width="204" height="42" rx="10" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+      <rect x="10" y="161" width="20" height="20" rx="5" fill="#007FFF"/>
+      <text x="38" y="176" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#1E293B">钉钉 / DingTalk</text>
+      <text x="194" y="176" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10" fill="#64748B">Stream</text>
+
+      <!-- OpenAPI -->
+      <rect y="200" width="204" height="42" rx="10" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+      <rect x="10" y="211" width="20" height="20" rx="5" fill="#6366F1"/>
+      <text x="38" y="226" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#1E293B">开放 API / Web Console</text>
+      <text x="194" y="226" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10" fill="#64748B">REST/SSE</text>
+    </g>
+
+    <!-- Gateway Control Sub-card -->
+    <g transform="translate(18, 335)">
+      <rect width="204" height="165" rx="12" fill="#F1F5F9"/>
+      <text x="12" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="700" fill="#475569">网关治理核心特性</text>
+      
+      <circle cx="18" cy="42" r="3" fill="#2563EB"/>
+      <text x="28" y="46" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" fill="#334155">意图智能自动分发 (Auto-route)</text>
+
+      <circle cx="18" cy="68" r="3" fill="#2563EB"/>
+      <text x="28" y="72" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" fill="#334155">SOP 会话粘性保护机制</text>
+
+      <circle cx="18" cy="94" r="3" fill="#2563EB"/>
+      <text x="28" y="98" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" fill="#334155">跨渠道用户统一身份对齐绑定</text>
+
+      <circle cx="18" cy="120" r="3" fill="#2563EB"/>
+      <text x="28" y="124" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" fill="#334155">Durable Inbox 入站幂等去重</text>
+
+      <circle cx="18" cy="146" r="3" fill="#2563EB"/>
+      <text x="28" y="150" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" fill="#334155">Outbox 异步退避重试</text>
+    </g>
+  </g>
+
+  <!-- Connecting Arrow: Left to Center -->
+  <g transform="translate(305, 360)">
+    <line x1="0" y1="0" x2="25" y2="0" stroke="#94A3B8" stroke-width="2" stroke-dasharray="4,4"/>
+    <polygon points="25,-4 33,0 25,4" fill="#94A3B8"/>
+  </g>
+
+  <!-- ==================== CENTER CORE: 数字员工本体 ==================== -->
+  <g transform="translate(345, 105)" filter="url(#glowShadow)">
+    <!-- Main Outer Container -->
+    <rect width="590" height="520" rx="20" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+
+    <!-- Top Identity Bar -->
+    <path d="M 0 20 Q 0 0 20 0 L 570 0 Q 590 0 590 20 L 590 64 L 0 64 Z" fill="#F8FAFC"/>
+    <line x1="0" y1="64" x2="590" y2="64" stroke="#E2E8F0" stroke-width="1"/>
+
+    <!-- Avatar & Role -->
+    <rect x="20" y="14" width="36" height="36" rx="10" fill="url(#primaryGrad)"/>
+    <text x="38" y="38" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#FFFFFF">🧑‍💼</text>
+    <text x="68" y="30" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif" font-size="15" font-weight="700" fill="#0F172A">
+      数字员工本体模型 (AI Digital Employee Core)
+    </text>
+    <text x="68" y="48" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif" font-size="11" fill="#64748B">
+      工号: SD-8092 · 岗位画像: 合规初审/核算专员 · 权限: 租户隔离RBAC · 执行基座: Harness v2
+    </text>
+
+    <!-- Sub-Section 1: 认知与规划大脑 (Cognitive Brain) -->
+    <g transform="translate(20, 80)">
+      <rect width="550" height="115" rx="14" fill="#FAF5FF" stroke="#E9D5FF" stroke-width="1.2"/>
+      <rect x="14" y="12" width="24" height="24" rx="6" fill="url(#brainGrad)"/>
+      <text x="46" y="28" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#581C87">
+        1. 认知与规划层 · 大脑与记忆中枢 (Cognition & Planner)
+      </text>
+
+      <!-- 3 Columns inside Brain -->
+      <rect x="14" y="44" width="168" height="58" rx="8" fill="#FFFFFF" stroke="#F3E8FF" stroke-width="1"/>
+      <text x="24" y="62" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#6B21A8">大模型推理基座</text>
+      <text x="24" y="78" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10" fill="#64748B">DeepSeek-V3 / Qwen-72B</text>
+      <text x="24" y="92" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9" fill="#9333EA">多模型热备与动态降级</text>
+
+      <rect x="190" y="44" width="168" height="58" rx="8" fill="#FFFFFF" stroke="#F3E8FF" stroke-width="1"/>
+      <text x="200" y="62" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#6B21A8">TurnPlanner 任务帧编排</text>
+      <text x="200" y="78" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10" fill="#64748B">TaskFrame 状态有向图</text>
+      <text x="200" y="92" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9" fill="#9333EA">单轮动作配额(硬拦截死循环)</text>
+
+      <rect x="366" y="44" width="170" height="58" rx="8" fill="#FFFFFF" stroke="#F3E8FF" stroke-width="1"/>
+      <text x="376" y="62" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#6B21A8">长期情境记忆库</text>
+      <text x="376" y="78" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10" fill="#64748B">用户偏好 · 历史情境提取</text>
+      <text x="376" y="92" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9" fill="#9333EA">会话上下文智能压缩投射</text>
+    </g>
+
+    <!-- Sub-Section 2: 确定性流程骨骼 (SOP State Machine) -->
+    <g transform="translate(20, 210)">
+      <rect width="550" height="150" rx="14" fill="#ECFDF5" stroke="#A7F3D0" stroke-width="1.2"/>
+      <rect x="14" y="12" width="24" height="24" rx="6" fill="url(#sopGrad)"/>
+      <text x="46" y="28" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#065F46">
+        2. 业务确定性约束 · 有限状态机 SOP 运行时 (Finite State Machine Runtime)
+      </text>
+
+      <!-- SOP State Machine Step Nodes -->
+      <g transform="translate(14, 46)">
+        <!-- Node 1: collect_info -->
+        <rect width="105" height="68" rx="10" fill="#FFFFFF" stroke="#6EE7B7" stroke-width="1"/>
+        <text x="10" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="700" fill="#047857">1. 采集与反问</text>
+        <text x="10" y="34" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9" fill="#64748B">collect_info</text>
+        <text x="10" y="48" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9" fill="#059669">· 槽位抽取 (Slots)</text>
+        <text x="10" y="60" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9" fill="#059669">· 缺失主动反问</text>
+
+        <!-- Arrow -->
+        <line x1="108" y1="34" x2="124" y2="34" stroke="#059669" stroke-width="1.5"/>
+        <polygon points="124,31 129,34 124,37" fill="#059669"/>
+
+        <!-- Node 2: validate & action -->
+        <rect x="132" width="115" height="68" rx="10" fill="#FFFFFF" stroke="#6EE7B7" stroke-width="1"/>
+        <text x="142" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="700" fill="#047857">2. 受控执行</text>
+        <text x="142" y="34" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9" fill="#64748B">action step</text>
+        <text x="142" y="48" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9" fill="#059669">· 限制可见工具集</text>
+        <text x="142" y="60" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9" fill="#059669">· 规则断言校验</text>
+
+        <!-- Arrow -->
+        <line x1="250" y1="34" x2="266" y2="34" stroke="#059669" stroke-width="1.5"/>
+        <polygon points="266,31 271,34 266,37" fill="#059669"/>
+
+        <!-- Node 3: sub_sop -->
+        <rect x="274" width="115" height="68" rx="10" fill="#FFFFFF" stroke="#6EE7B7" stroke-width="1"/>
+        <text x="284" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="700" fill="#047857">3. 嵌套子流程</text>
+        <text x="284" y="34" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9" fill="#64748B">sub_sop modular</text>
+        <text x="284" y="48" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9" fill="#059669">· 复合复杂业务</text>
+        <text x="284" y="60" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9" fill="#059669">· 图谱模块化复用</text>
+
+        <!-- Arrow Fork: to Normal Terminal or Handoff -->
+        <path d="M 392 24 L 410 18" fill="none" stroke="#059669" stroke-width="1.5"/>
+        <polygon points="410,15 415,18 410,21" fill="#059669"/>
+
+        <path d="M 392 48 L 410 52" fill="none" stroke="#DC2626" stroke-width="1.5"/>
+        <polygon points="410,49 415,52 410,55" fill="#DC2626"/>
+
+        <!-- Node 4A: Terminal Deliverable -->
+        <rect x="418" y="0" width="104" height="34" rx="6" fill="#FFFFFF" stroke="#10B981" stroke-width="1"/>
+        <text x="426" y="16" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10" font-weight="700" fill="#065F46">4A. 完结交付物</text>
+        <text x="426" y="28" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="8" fill="#64748B">产出结构化 Artifacts</text>
+
+        <!-- Node 4B: Handoff to Human -->
+        <rect x="418" y="38" width="104" height="34" rx="6" fill="#FEF2F2" stroke="#F87171" stroke-width="1"/>
+        <text x="426" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10" font-weight="700" fill="#991B1B">4B. Handoff 转人工</text>
+        <text x="426" y="64" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="8" fill="#DC2626">触发审批 / 无缝接管</text>
+      </g>
+
+      <!-- Bottom Hint in SOP Card -->
+      <text x="24" y="136" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10" fill="#047857">
+        💡 经验资产化提炼器 (Skill Distiller): 支持专家自然语言对话逆向提炼为有向图 · 支持版本分支演进
+      </text>
+    </g>
+
+    <!-- Sub-Section 3: 执行双手与沙箱 (Harness Sandbox & Tools) -->
+    <g transform="translate(20, 375)">
+      <rect width="550" height="125" rx="14" fill="#FFFBEB" stroke="#FDE68A" stroke-width="1.2"/>
+      <rect x="14" y="12" width="24" height="24" rx="6" fill="url(#toolGrad)"/>
+      <text x="46" y="28" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#92400E">
+        3. 物理执行双手 · 沙箱隔离与系统连接器 (Execution & Harness Sandbox)
+      </text>
+
+      <g transform="translate(14, 46)">
+        <rect width="168" height="65" rx="8" fill="#FFFFFF" stroke="#FCD34D" stroke-width="1"/>
+        <text x="12" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#78350F">Harness 沙箱文件系统</text>
+        <text x="12" y="34" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10" fill="#64748B">独立 Workspace 目录隔离</text>
+        <text x="12" y="48" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9" fill="#D97706">受限磁盘与产物生命周期管理</text>
+        <text x="12" y="58" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9" fill="#D97706">超时中断与命令注入拦截</text>
+
+        <rect x="190" width="168" height="65" rx="8" fill="#FFFFFF" stroke="#FCD34D" stroke-width="1"/>
+        <text x="202" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#78350F">企业业务系统工具</text>
+        <text x="202" y="34" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10" fill="#64748B">ERP / CRM / OA / 财务中台</text>
+        <text x="202" y="48" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9" fill="#D97706">HTTP API 安全鉴权调用</text>
+        <text x="202" y="58" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9" fill="#D97706">敏感秘钥落库 KMS 加密</text>
+
+        <rect x="366" width="170" height="65" rx="8" fill="#FFFFFF" stroke="#FCD34D" stroke-width="1"/>
+        <text x="378" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#78350F">MCP 协议与代码沙箱</text>
+        <text x="378" y="34" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10" fill="#64748B">Model Context Protocol 规范</text>
+        <text x="378" y="48" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9" fill="#D97706">受控 Python 脚本沙箱容器</text>
+        <text x="378" y="58" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9" fill="#D97706">支持数据清洗、计算与导出</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Connecting Arrow: Center to Right -->
+  <g transform="translate(940, 360)">
+    <line x1="0" y1="0" x2="25" y2="0" stroke="#94A3B8" stroke-width="2" stroke-dasharray="4,4"/>
+    <polygon points="25,-4 33,0 25,4" fill="#94A3B8"/>
+  </g>
+
+  <!-- ==================== RIGHT PANEL: 结构感知知识库 ==================== -->
+  <g transform="translate(980, 105)" filter="url(#cardShadow)">
+    <rect width="240" height="520" rx="18" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.2"/>
+
+    <!-- Title -->
+    <rect x="18" y="18" width="32" height="32" rx="8" fill="#F0FDF4"/>
+    <circle cx="34" cy="34" r="6" fill="#16A34A"/>
+    <text x="58" y="33" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif" font-size="14" font-weight="700" fill="#1E293B">OKF 层级知识库</text>
+    <text x="58" y="47" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif" font-size="11" fill="#64748B">Hierarchical Knowledge</text>
+    <line x1="18" y1="62" x2="222" y2="62" stroke="#F1F5F9" stroke-width="1"/>
+
+    <!-- Tree Hierarchy Visual -->
+    <g transform="translate(18, 75)">
+      <!-- Level 1: Doc -->
+      <rect width="204" height="48" rx="8" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+      <text x="12" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="700" fill="#0F172A">📁 1. 源文档层 (Source Doc)</text>
+      <text x="12" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10" fill="#64748B">制度文件/合同/操作手册原件</text>
+
+      <!-- Down line -->
+      <line x1="28" y1="50" x2="28" y2="64" stroke="#94A3B8" stroke-width="1.5"/>
+
+      <!-- Level 2: Section & Bucket -->
+      <rect y="64" width="204" height="48" rx="8" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+      <text x="12" y="86" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="700" fill="#0F172A">📑 2. 章节与业务分桶</text>
+      <text x="12" y="102" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10" fill="#64748B">目录树解析 · 采购/财务/合规桶</text>
+
+      <!-- Down line -->
+      <line x1="28" y1="114" x2="28" y2="128" stroke="#94A3B8" stroke-width="1.5"/>
+
+      <!-- Level 3: Concept & Atomic Chunks -->
+      <rect y="128" width="204" height="52" rx="8" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+      <text x="12" y="150" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="700" fill="#0F172A">🧩 3. 概念卡片与原子规则</text>
+      <text x="12" y="166" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10" fill="#64748B">Playbook / Business Rule</text>
+
+      <!-- Down line -->
+      <line x1="28" y1="182" x2="28" y2="196" stroke="#94A3B8" stroke-width="1.5"/>
+
+      <!-- Level 4: Atomic Citations -->
+      <rect y="196" width="204" height="60" rx="8" fill="#ECFDF5" stroke="#6EE7B7" stroke-width="1"/>
+      <text x="12" y="218" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="700" fill="#065F46">🏷️ 4. 原子级精准引证</text>
+      <text x="12" y="234" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10" fill="#047857">角标引证: [1]《规程》第3.2条</text>
+      <text x="12" y="248" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9" fill="#059669">定位原文段落 · 彻底消除幻觉</text>
+    </g>
+
+    <!-- Two-stage Retrieval Box -->
+    <g transform="translate(18, 350)">
+      <rect width="204" height="150" rx="12" fill="#F1F5F9"/>
+      <text x="12" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="700" fill="#334155">两阶段定向检索机制</text>
+
+      <text x="12" y="44" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10" font-weight="600" fill="#2563EB">阶段 1: 粗筛分桶与章节定位</text>
+      <text x="12" y="58" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9" fill="#64748B">先判断归属于哪个制度与章节</text>
+
+      <text x="12" y="80" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10" font-weight="600" fill="#059669">阶段 2: 细排原子依据提取</text>
+      <text x="12" y="94" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9" fill="#64748B">Dense向量 + BM25 + Rerank</text>
+
+      <rect x="8" y="108" width="188" height="32" rx="6" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1"/>
+      <text x="102" y="128" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10" font-weight="600" fill="#0F172A">
+        对比 Naive RAG: 准确率提升 40%
+      </text>
+    </g>
+  </g>
+
+  <!-- ==================== BOTTOM PANEL: 多Agent团队协同与自进化闭环 ==================== -->
+  <g transform="translate(60, 645)" filter="url(#cardShadow)">
+    <rect width="1160" height="135" rx="18" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.2"/>
+
+    <!-- Left Block: Multi-Agent Team Collaboration -->
+    <g transform="translate(20, 16)">
+      <rect width="28" height="28" rx="8" fill="#E0F2FE"/>
+      <circle cx="14" cy="14" r="5" fill="#0284C7"/>
+      <text x="36" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif" font-size="13" font-weight="700" fill="#0F172A">
+        多 Agent 团队协同机制 (Team Synergy)
+      </text>
+      <text x="36" y="34" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10" fill="#64748B">
+        Team Leader 拆解 · 3 轮血条竞标制 · 共享黑板活文档
+      </text>
+
+      <g transform="translate(0, 44)">
+        <rect width="165" height="58" rx="8" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+        <text x="12" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10" font-weight="700" fill="#0369A1">👑 项目领导 TL (Leader)</text>
+        <text x="12" y="34" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9" fill="#64748B">拆解复杂目标、分发子任务</text>
+        <text x="12" y="48" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9" fill="#0284C7">打分裁决与成果最终验收</text>
+
+        <rect x="175" width="180" height="58" rx="8" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+        <text x="12" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10" font-weight="700" fill="#0369A1">⚔️ 3 轮血条竞标制 (HP)</text>
+        <text x="12" y="34" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9" fill="#64748B">R1方案陈述 · R2-3相互反驳</text>
+        <text x="12" y="48" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9" fill="#0284C7">打分扣血，胜者为王，杜绝死锁</text>
+
+        <rect x="365" width="185" height="58" rx="8" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+        <text x="12" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10" font-weight="700" fill="#0369A1">📋 共享黑板 (Blackboard)</text>
+        <text x="12" y="34" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9" fill="#64748B">轻量入库流水线 · 规范化去重</text>
+        <text x="12" y="48" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9" fill="#0284C7">按需读Top-K，根治上下文爆炸</text>
+      </g>
+    </g>
+
+    <!-- Dividing Line -->
+    <line x1="585" y1="20" x2="585" y2="115" stroke="#E2E8F0" stroke-width="1"/>
+
+    <!-- Right Block: Observability & PR Self-Evolution Flywheel -->
+    <g transform="translate(605, 16)">
+      <rect width="28" height="28" rx="8" fill="#ECFDF5"/>
+      <circle cx="14" cy="14" r="5" fill="#059669"/>
+      <text x="36" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif" font-size="13" font-weight="700" fill="#0F172A">
+        全链路观测审计与 PR 持续自进化闭环 (Observability &amp; Evolution)
+      </text>
+      <text x="36" y="34" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10" fill="#64748B">
+        Trace 监控 → 负向反馈归因 → 最小候选生成 → 黄金集回测 → PR 审批合并 → 秒级回滚
+      </text>
+
+      <g transform="translate(0, 44)">
+        <rect width="165" height="58" rx="8" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+        <text x="12" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10" font-weight="700" fill="#047857">📡 全链路 Trace 审计</text>
+        <text x="12" y="34" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9" fill="#64748B">Thought/Plan/Action/Token</text>
+        <text x="12" y="48" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9" fill="#059669">真实记录可回放、可审计</text>
+
+        <rect x="175" width="180" height="58" rx="8" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+        <text x="12" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10" font-weight="700" fill="#047857">🔄 PR 演进提案 (Proposal)</text>
+        <text x="12" y="34" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9" fill="#64748B">最小修改原则 · 结构化 Diff</text>
+        <text x="12" y="48" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9" fill="#059669">黄金测试集自动回归验证</text>
+
+        <rect x="365" width="170" height="58" rx="8" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+        <text x="12" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10" font-weight="700" fill="#047857">🛡️ 人在回路与原子回滚</text>
+        <text x="12" y="34" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9" fill="#64748B">管理员审批一键发布私有分支</text>
+        <text x="12" y="48" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9" fill="#059669">支持 100ms 秒级快照回滚</text>
+      </g>
+    </g>
+  </g>
+
+</svg>
+

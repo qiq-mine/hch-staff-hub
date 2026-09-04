@@ -61,6 +61,8 @@
 
 ### 2.1 系统全景架构图
 
+![企业级数字员工核心体系架构示意图](./digital_employee_diagram.svg)
+
 ```mermaid
 flowchart TB
     subgraph ClientChannels["接入渠道层 (Channels & Integration)"]
