@@ -99,7 +99,7 @@ const mockData = {
       harness_max_actions: 32,
       metadata: {
         avatar: 'staffdeck-avatar-service-B24Bmu6l.png',
-        staff_no: 'SD-8092',
+        staff_no: 'TH-8092',
         role_title: '财务初审员',
         department: '财务核算部',
         published_to_gallery: true,
@@ -125,7 +125,7 @@ const mockData = {
       harness_max_actions: 32,
       metadata: {
         avatar: 'staffdeck-avatar-quality-DUcC4rTK.png',
-        staff_no: 'SD-8093',
+        staff_no: 'TH-8093',
         role_title: '法务风控初审',
         department: '法务合规部',
         published_to_gallery: true,
@@ -149,7 +149,7 @@ const mockData = {
       harness_max_actions: 24,
       metadata: {
         avatar: 'staffdeck-avatar-ops-qszK1XKY.png',
-        staff_no: 'SD-8094',
+        staff_no: 'TH-8094',
         role_title: 'IT运维专家',
         department: '信息技术部',
         published_to_gallery: false,
@@ -172,7 +172,7 @@ const mockData = {
       harness_max_actions: 50,
       metadata: {
         avatar: 'staffdeck-avatar-project-BybYFe9o.png',
-        staff_no: 'SD-8090',
+        staff_no: 'TH-8090',
         role_title: '项目组长 TL',
         department: '智能运营中心',
         published_to_gallery: true,

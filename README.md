@@ -66,7 +66,7 @@
 ```mermaid
 flowchart TB
     subgraph ClientChannels["接入渠道层 (Channels & Integration)"]
-        WebConsole["StaffDeck 企业工作台 (React/TS)"]
+        WebConsole["TeamerHub 企业工作台 (React/TS)"]
         Feishu["飞书 / Lark (Webhook & WS)"]
         WeCom["企业微信 (智能机器人)"]
         WeChat["微信 / 微信客服 (iLink)"]

@@ -323,7 +323,7 @@ flowchart TD
     end
 
     subgraph AppCluster["2. 应用与计算层 (Compute & Runtime)"]
-        API_App["StaffDeck API 服务 (FastAPI Pods x N)"]
+        API_App["TeamerHub API 服务 (FastAPI Pods x N)"]
         Async_Worker["异步任务处理集群 (Celery / RQ Workers x N)"]
         Sandbox_Node["安全代码执行沙箱容器 (Docker / gVisor Runtime)"]
     end

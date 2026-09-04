@@ -58,7 +58,7 @@
 
 ## 二、 Agent PR 的具体形态与数据结构 (Schema)
 
-在 StaffDeck / HCH Staff Hub 等先进架构中，一个 PR（在系统内部通常定义为 `EvolutionProposal`，即演化提案）不是一段松散的自然语言，而是一个**严格结构化、具备可执行性的审查单元**。
+在 TeamerHub / HCH Staff Hub 等先进架构中，一个 PR（在系统内部通常定义为 `EvolutionProposal`，即演化提案）不是一段松散的自然语言，而是一个**严格结构化、具备可执行性的审查单元**。
 
 ### 2.1 PR 的六大核心要素
 
