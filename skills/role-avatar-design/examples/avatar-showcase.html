@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>数字员工角色头像系统展示 · Role Avatar System</title>
+  <style>
+    :root {
+      --bg: #F9FAFB;
+      --card-bg: #FFFFFF;
+      --border: #E5E7EB;
+      --text-main: #111827;
+      --text-muted: #6B7280;
+      --accent: #2563EB;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      background-color: var(--bg);
+      color: var(--text-main);
+      padding: 48px 24px;
+      line-height: 1.5;
+    }
+    .container {
+      max-width: 1120px;
+      margin: 0 auto;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+    header h1 {
+      font-size: 32px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      color: var(--text-main);
+      margin-bottom: 8px;
+    }
+    header p {
+      font-size: 16px;
+      color: var(--text-muted);
+    }
+    .badge {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 4px 12px;
+      border-radius: 9999px;
+      background: #EEF2FF;
+      color: #4F46E5;
+      font-size: 13px;
+      font-weight: 500;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 28px;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 20px -3px rgba(0, 0, 0, 0.08);
+    }
+    .avatar-wrapper {
+      width: 180px;
+      height: 180px;
+      border-radius: 28px;
+      overflow: hidden;
+      background: #F3F4F6;
+      border: 1.5px solid #E5E7EB;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .avatar-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .role-title {
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--text-main);
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .role-tag {
+      font-size: 12px;
+      padding: 2px 8px;
+      border-radius: 6px;
+      font-weight: 500;
+    }
+    .tag-hr { background: #FDF2F8; color: #DB2777; }
+    .tag-rd { background: #EEF2FF; color: #4F46E5; }
+    .tag-fin { background: #FEF3C7; color: #D97706; }
+    .tag-pm { background: #ECFDF5; color: #059669; }
+    .tag-fe { background: #EFF6FF; color: #2563EB; }
+    .tag-arch { background: #F4F4F5; color: #3F3F46; }
+    .role-desc {
+      font-size: 13px;
+      color: var(--text-muted);
+      text-align: center;
+      margin-bottom: 16px;
+      line-height: 1.6;
+    }
+    .prop-box {
+      width: 100%;
+      background: #F9FAFB;
+      border: 1px dashed #D1D5DB;
+      border-radius: 12px;
+      padding: 10px 14px;
+      font-size: 12px;
+      color: #4B5563;
+      display: flex;
+      justify-content: space-between;
+    }
+    .prop-box span:first-child { font-weight: 600; color: #374151; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>企业数字员工角色头像系统</h1>
+      <p>极简日式编辑插画风格（Noritake / Yu Nagaba 体系）· 统一视觉基因与角色专属标识</p>
+      <div class="badge">Skill: role-avatar-design</div>
+    </header>
+
+    <div class="grid">
+      <!-- HR -->
+      <div class="card">
+        <div class="avatar-wrapper">
+          <img src="../resources/hr-manager.png" alt="HR Manager" />
+        </div>
+        <div class="role-title">
+          人力资源顾问 (HR)
+          <span class="role-tag tag-hr">HR Dept</span>
+        </div>
+        <p class="role-desc">珊瑚粉鲍伯发型，亲和温暖神态，搭配极简职场西装与脸颊腮红。</p>
+        <div class="prop-box">
+          <span>专属道具：</span>
+          <span>悬浮员工胸卡 / 人才档案卡</span>
+        </div>
+      </div>
+
+      <!-- R&D -->
+      <div class="card">
+        <div class="avatar-wrapper">
+          <img src="../resources/rd-engineer.png" alt="R&D Engineer" />
+        </div>
+        <div class="role-title">
+          研发/算法工程师 (R&D)
+          <span class="role-tag tag-rd">Tech Lab</span>
+        </div>
+        <p class="role-desc">微卷黑发，极简正圆细框眼镜，专注从容的思考眼神与休闲卫衣。</p>
+        <div class="prop-box">
+          <span>专属道具：</span>
+          <span>悬浮终端代码卡 / 代码标签 &lt;/&gt;</span>
+        </div>
+      </div>
+
+      <!-- Finance -->
+      <div class="card">
+        <div class="avatar-wrapper">
+          <img src="../resources/financial-analyst.png" alt="Finance Analyst" />
+        </div>
+        <div class="role-title">
+          财务分析专家 (Finance)
+          <span class="role-tag tag-fin">Finance</span>
+        </div>
+        <p class="role-desc">暖金短发，利落衬衫配藏青色针织背心，沉稳可靠的专业气场。</p>
+        <div class="prop-box">
+          <span>专属道具：</span>
+          <span>悬浮柱状统计图 / 财务报表</span>
+        </div>
+      </div>
+
+      <!-- Product -->
+      <div class="card">
+        <div class="avatar-wrapper">
+          <img src="../resources/product-manager.png" alt="Product Manager" />
+        </div>
+        <div class="role-title">
+          产品规划专家 (Product)
+          <span class="role-tag tag-pm">Product</span>
+        </div>
+        <p class="role-desc">亚麻绿马尾，敏锐自信的执行神态，沉浸式协同规划气质。</p>
+        <div class="prop-box">
+          <span>专属道具：</span>
+          <span>悬浮敏捷看板 / 需求便利贴</span>
+        </div>
+      </div>
+
+      <!-- Frontend (Original Ref) -->
+      <div class="card">
+        <div class="avatar-wrapper">
+          <img src="../resources/frontend-engineer.png" alt="Frontend Engineer" />
+        </div>
+        <div class="role-title">
+          前端交互架构 (Frontend)
+          <span class="role-tag tag-fe">Engineering</span>
+        </div>
+        <p class="role-desc">牛仔蓝丸子头发髻，纯黑圆领短袖，现代互联网极简视觉先锋。</p>
+        <div class="prop-box">
+          <span>专属道具：</span>
+          <span>悬浮移动端原型界面卡片</span>
+        </div>
+      </div>
+
+      <!-- Architect (Original Ref) -->
+      <div class="card">
+        <div class="avatar-wrapper">
+          <img src="../resources/software-architect.png" alt="Software Architect" />
+        </div>
+        <div class="role-title">
+          系统总架构师 (Architect)
+          <span class="role-tag tag-arch">Core Arch</span>
+        </div>
+        <p class="role-desc">深黑短发与自然胡茬，托腮深思姿态，高领半拉链工装毛衣。</p>
+        <div class="prop-box">
+          <span>专属姿态：</span>
+          <span>手托下巴系统级架构推演姿态</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
